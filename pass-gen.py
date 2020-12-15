@@ -1,18 +1,18 @@
 import secrets
 import string
 
-def password_gen(password_length):
+def passwd_gen(passwd_len):
 
     characters = string.ascii_letters + string.digits
 
-    secure_password = ''.join(secrets.choice(characters) for i in range(password_length))
+    secure_password = ''.join(secrets.choice(characters) for i in range(passwd_len))
 
-    return secure_password
+    return secure_passwd
 
 def main():
 
-    user_password_length = int(input("Input number of digits for password: "))
+    user_passwd_len = int(input("Input number of digits for password: "))
 
-    print("Password Generated: ", password_gen(user_password_length))
+    print("Password Generated: ", password_gen(user_passwd_len))
 
 main()
