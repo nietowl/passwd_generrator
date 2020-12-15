@@ -5,7 +5,7 @@ def passwd_gen(passwd_len):
 
     characters = string.ascii_letters + string.digits
 
-    secure_password = ''.join(secrets.choice(characters) for i in range(passwd_len))
+    secure_passwd = ''.join(secrets.choice(characters) for i in range(passwd_len))
 
     return secure_passwd
 
