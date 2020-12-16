@@ -15,25 +15,20 @@ sudo apt-get install python3
 Downloading and setting up the tool:
 
 ```bash
-git clone https://github.com/Pranav-Darwai/D-FYT.git
-cd D-FYT
+git clone https://github.com/nietowl/passwd_generrator.git
+cd passwd_generrator
 pip3 install -r requirements.txt
 ```
 
 Syntax: 
 ```bash
-python3 dyft.py
+python3 passwd_generrator
 ```
-Paste: URL of YouTube Playlist
+Enter the length of password you want
 
-Type: Folder Name
 
-Output: Save the videos in D-FYT/Downloads/Folder Name
 
-Examples: 
-```bash
-python3 dyft.py
-url : https://www.youtube.com/playlist?list=PLMEZyDHJojxOivUPWX1aasnKcpau8WZfP
-Folder Name : imagine dragon
-```
+Output: boom you have the password
+
+
 Please report functionality issues and bugs if found.
