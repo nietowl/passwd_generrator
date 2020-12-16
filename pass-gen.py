@@ -1,18 +1,19 @@
+#!/usr/bin/env python3
 import secrets
 import string
 
 def passwd_gen(passwd_len):
 
-    characters = string.ascii_letters + string.digits
+    allchr = string.ascii_letters + string.digits + string.punctuation
 
-    secure_passwd = ''.join(secrets.choice(characters) for i in range(passwd_len))
+    encrp_passwd = ''.join(secrets.choice(allchr) for i in range(passwd_len))
 
-    return secure_passwd
+    return encrp_passwd
 
 def main():
 
-    user_passwd_len = int(input("Input number of digits for password: "))
+    passwd_len = int(input("Input Length password: "))
 
-    print("Password Generated: ", password_gen(user_passwd_len))
+    print("Password Generated: ", passwd_gen(passwd_len))
 
 main()
